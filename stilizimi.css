@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   /* font-family: Arial; */
+}
+
+p {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 200px;
+    transition: all 0.5s ease;
+    aspect-rati0: 1/1;
+}
+
+.permbajtja {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: white;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 2;
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+}
+
+.btn-1 {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+.btn-1:hover {
+    transition: 1s ease;
+    background-color: darkorchid;
+}
+
+main {
+    background-color: white;
+    padding: 25px 0;
+}
+
+.produkti {
+    border: 1px solid white;
+    border-radius: 3px;
+    max-width: 250px;
+}
+
+.produkti-detaje {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    padding-bottom: 10px;
+    background-color: aliceblue;
+}
+
+img:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+}
+
+.produkti-detaje p {
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: green;
+    font-weight: 700;
+}
+
+.produkti-detaje p span {
+    text-decoration: line-through;
+    color: red;
+    font-weight: normal;
+}
+
+.produkti-detaje a {
+    font-size: 15px;
+    text-decoration: none;
+    background-color: var(--color-sec);
+    color: blue;
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+
+.produkti-detaje a:hover {
+    background-color: var(--color-primary);
+}
+
+section::-webkit-scrollbar {
+    height: 5px;
+    width: 2px;
+    border: 1px solid dodgerblue;
+    background-color: black;
+}
+
+#produktis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 25px));
+    column-gap: 15px;
+    grid-row-gap: 15px;
+    padding: 15px 0;
+}
+
+section::-webkit-scrollbar-track {
+    --webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+section::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    outline: 1px solid black;
+}

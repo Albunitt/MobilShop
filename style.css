@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h2{
+    font-family: serif;
+        
+}
+
+.kryesore {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+}
+
+.titulli {
+    padding: 12px;
+    text-align: center;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+}
+
+nav {
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 20%;
+}
+
+.logo img {
+    width: 75px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+ .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links ul li a:hover
+{
+    transition: 1s ease;
+    color: dodgerblue; 
+}
+ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.informatat {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 100px;
+    left: -10%;
+    transform: translateY(-25%);
+}
+
+#circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    /* background: #ccc; */
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.feature img {
+    width: 70px;
+}
+
+.feature {
+    position: absolute;
+    display: flex;
+    color: white;
+}
+
+.feature div {
+    margin-left: 30px;
+}
+
+.feature p {
+    margin-top: 8px;
+}
+
+.one {
+    top: 450px;
+    right: 0px;
+    
+}
+
+.two {
+    top: 10px;
+    right: 250px;
+    transform: rotate(-90deg);
+}
+
+.three {
+    bottom: 450px;
+    left: 2px;
+    transform: rotate(-180deg);
+}
+
+.four {
+    bottom: 150px;
+    right: 400px;
+    transform: rotate(-270deg);
+}
+
+.telefoni {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.kontrolli {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.kontrolli h3 {
+    margin: 15px 0;
+    color: white;
+}
+
+#lart {
+    width: 15px;
+    cursor: pointer;
+}
+
+#poshte {
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 500px solid white;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid white;
+    border-left: 500px solid white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar__container {
+        display: flex;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+}

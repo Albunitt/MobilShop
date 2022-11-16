@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kontakti</title>
+    <link rel="stylesheet" type="text/css" href="stilizimii.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+
+<body>
+    <form onsubmit="sendEmail(); reset(); return false;">
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right" onsubmit="sendEmail(); reset(); return false();">
+                    <h2>Kontaktoni kompaninë</h2>
+                    <input type="text" id="name" placeholder="Emri juaj">
+                    <input type="email" id="email" placeholder="Email juaj">
+                    <input type="text" id="phone" placeholder="Nr. Telefonit">
+                    <textarea placeholder="Message" id="message"></textarea>
+                    <button id="btn">Dërgo</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "albunitb6@gmail.com",
+                Password: "password",
+                To: 'albunit7@gmail.com.com',
+                From: document.getElementById("email").value,
+                Subject: "This is the subject",
+                Body: "Emri: " + document.getElementById("name").value +
+                    "<br> Email: " + document.getElementById("email").value +
+                    "<br> Nr i telefonit: " + document.getElementById("phone").value +
+                    "<br> Mesazhi: " + document.getElementById("message").value
+            }).then(
+                message => alert("Mesazhi është dërguar me sukses! ")
+            );
+        }
+    </script>
+    
+</body></html>

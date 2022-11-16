@@ -1,0 +1,87 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #eecda3, #ef629f);
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+div {
+    text-align: center;
+}
+
+#num1 {
+    margin: 0 5px;
+    padding: 5px 0;
+    width: 150px;
+    border: 1px solid #999;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#num2 {
+    margin: 0 5px;
+    padding: 5px 0;
+    width: 150px;
+    border: 1px solid #999;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+div h2 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+div hr {
+    margin: 14px 0;
+
+}
+
+div input[type=number]:read-only {
+    border: 1px solid #000;
+    background-color: #666;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+div button {
+    margin: 0 4px;
+    padding: 6px 0;
+    width: 62px;
+    border: 1px solid #999;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.div button:hover {
+    background-color: white;
+}
+
+.div button:focus {
+    outline: 2px solid #333;
+}
+
